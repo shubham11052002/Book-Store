@@ -1,0 +1,10 @@
+.preview{
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.preview:hover{
+    background-color: red;
+    color: black;
+    font-weight: 900;
+}

@@ -1,0 +1,10 @@
+/* Add this to your CSS file */
+.disabled-row {
+    background-color: #f8f9fa; /* Light gray background */
+    opacity: 0.6; /* Reduce opacity to give it a disabled appearance */
+    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+  }
+  
+  .disabled-row td {
+    color: #6c757d; /* Light gray text color for disabled status */
+  }
