@@ -1,6 +1,7 @@
 const Transaction = require('../models/Transaction');
 const ProductReview = require('../models/ProductReview')
-const stripe = require('stripe')(STRIPE_SECRET_KEY);
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 async function doPayment(req, res) {
     try {
         // console.log(req.body, 'req.body')
@@ -80,7 +81,8 @@ async function submitReview(req, res) {
         productReview.user = req.user.id;
         await productReview.save();
         res.status(200).send()
-    } catch (error) {-
+    } catch (error) {
+        -
         console.log(error.message)
         res.status(400).send()
     }

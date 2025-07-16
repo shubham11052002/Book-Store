@@ -52,6 +52,7 @@ function BookList() {
               <Table  bordered hover   className="mt-2">
             <thead>
                 <tr>
+                <th>S.no</th>
                 <th>Image</th>    
                 <th>Book Name</th>
                 <th>Description</th>
@@ -63,6 +64,7 @@ function BookList() {
             {
                 books.map((book, i)=> 
                     <tr key= {i}>
+                        <td>{i+1}</td>
                         <td><img src= {book.bookImage} width="30px" height= "30px"></img></td>
                         <td>{ book.bookName }</td>
                         <td>{ book.bookDescription }</td>
