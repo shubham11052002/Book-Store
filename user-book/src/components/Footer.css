@@ -1,62 +1,91 @@
 .footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .footer-section {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin: 5px 0;
-  }
-  
-  .footer-section ul li a {
-    color: #bdc3c7;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #fff;
-  }
-  
-  .social-icons a {
-    color: #bdc3c7;
-    font-size: 20px;
-    margin-right: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #fff;
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-    font-size: 14px;
-  }
-  
+  background: #111;
+  color: #ddd;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white; /* white background behind PNG */
+  padding: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  background-color: #f0f0f0; /* light hover background */
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0073e6;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}

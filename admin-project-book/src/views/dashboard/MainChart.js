@@ -112,7 +112,7 @@ const MainChart = () => {
                 stepSize: Math.ceil(250 / 5),
               },
             },
-          },
+          },  
           elements: {
             line: {
               tension: 0.4,

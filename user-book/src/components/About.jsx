@@ -3,7 +3,6 @@ import React from "react";
 const About = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-12 px-6">
-      {/* Content Section */}
       <div className="max-w-5xl w-full bg-white shadow-md rounded-lg overflow-hidden p-8">
         <h2 className="text-3xl font-semibold text-gray-800 text-center mb-6">
           Welcome to Book Haven 📚
@@ -14,7 +13,6 @@ const About = () => {
           and timeless classics to inspire minds and fuel imaginations.
         </p>
 
-        {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           <div className="bg-blue-50 shadow-lg rounded-lg p-6 text-center">
             <h3 className="text-xl font-semibold text-blue-700">📚 10,000+ Books</h3>
@@ -38,7 +36,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Mission & CTA */}
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-semibold text-gray-800">Our Mission</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">

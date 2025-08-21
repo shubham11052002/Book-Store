@@ -162,7 +162,6 @@ function Checkout() {
           </Card>
         </Col>
 
-        {/* Right Column - Product Summary */}
         <Col md={6}>
           <Card className="p-4 shadow-lg border-0">
             <h3 className="mb-4 text-center text-primary">Product Summary</h3>
@@ -204,7 +203,3 @@ function Checkout() {
 }
 
 export default Checkout;
-
-/*
-
-*/
